@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qubads — Login</title>
+  <meta charset="UTF-8">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header" style="background-color: #1c2225; border:0;">
+  <div class="header-container" >
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="Qubads Logo">
+    </a>
+    <nav>
+      <!-- Language Dropdown -->
+<div class="lang-dropdown">
+  <button class="lang-btn">
+    <img src="images/flag.png" alt="US Flag" class="flag-icon">
+    <span>English</span>
+    <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24">
+      <path stroke="currentColor" stroke-width="2" d="M6 9l6 6 6-6" />
+    </svg>
+  </button>
+
+  <ul class="lang-menu">
+    <li><img src="images/flag.png" alt="US Flag" class="flag-icon"> English</li>
+    <li><img src="images/flag.png" alt="France Flag" class="flag-icon"> English</li>
+    <li><img src="images/flag.png" alt="Spain Flag" class="flag-icon"> English</li>
+  </ul>
+</div>
+    </nav>
+  </div>
+</header>
+<!-- === Sign Up (reuses login styles) === -->
+<main class="login-section">
+  <div class="background-wave-container">
+    <img src="images/a6acb61872d5067bb780002832276c205e0a6012.png" alt="Decorative wave" class="background-wave-img">
+  </div>
+
+  <div class="login-container">
+    <div class="login-box">
+      <header class="login-header">
+        <h1>Welcome, Fill in details correctly to proceed</h1>
+      </header>
+
+      <form class="login-form" method="post" action="#">
+        <!-- Full name -->
+        <div class="form-group">
+          <label for="full_name">Full name <span class="required-asterisk">*</span></label>
+          <input id="full_name" name="full_name" type="text" placeholder="firstname &amp; last name"
+                 autocomplete="name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email address <span class="required-asterisk">*</span></label>
+          <input id="email" name="email" type="email" placeholder="olivia@untitledui.com"
+                 autocomplete="email" inputmode="email" required>
+        </div>
+
+        <!-- Zone + Phone -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="zone">Zone/Network <span class="required-asterisk">*</span></label>
+            <div class="select-wrapper">
+              <select id="zone" name="zone" class="select" required>
+                <option value="" selected disabled>select a zone or network</option>
+                <option value="ng-core">NG — Core</option>
+                <option value="ng-west">NG — West</option>
+                <option value="ng-east">NG — East</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number <span class="required-asterisk">*</span></label>
+            <div class="phone-row">
+              <select class="country-select" name="cc" aria-label="Country code" required>
+                <option value="NG" selected>NG  +234</option>
+                <option value="GH">GH  +233</option>
+                <option value="US">US  +1</option>
+              </select>
+              <input id="phone" name="phone" type="tel"
+                     placeholder="+234 (901) 000-0000" inputmode="tel" autocomplete="tel" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Create password <span class="required-asterisk">*</span></label>
+          <div class="input-with-icon">
+            <input id="password" name="password" type="password" placeholder="enter password"
+                   autocomplete="new-password" required>
+           
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">Create account</button>
+      </form>
+    </div>
+
+    <p class="signup-prompt">
+      Already have an account? <a href="login.html">Log in</a>
+    </p>
+  </div>
+</main>
+
+</body>
+</html>
