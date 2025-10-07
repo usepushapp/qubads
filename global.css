@@ -65,9 +65,19 @@ a {
     transform: scale(1.05);
 }
 
+.btn-dark:hover {
+    transform: scale(1.05);
+}
+
 .btn-secondary {
     color: var(--color-text-light);
     border: 1px solid #ebebeb;
+}
+
+.btn-dark {
+    color: var(--color-text-dark);
+    border: 1px solid #000;
+    margin-top: 20px;
 }
 
 .btn-secondary:hover {
@@ -413,6 +423,7 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid rgba(50,145,246,.5); ou
         position: absolute;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         border-radius: 12px;
+        z-index: 5;
     }
     .feature-img-1 {
         width: 112px;
@@ -457,6 +468,10 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid rgba(50,145,246,.5); ou
         .features-content {
             flex-direction: column;
             gap: 40px;
+        }
+
+        .features-image-wrapper {
+            display: none;
         }
     }
 
@@ -727,6 +742,12 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid rgba(50,145,246,.5); ou
             flex-direction: column;
             text-align: center;
         }
+        .work-item-content {
+            text-align: left;
+        }
+        .work-item-img {
+            width: 100%;
+        }
     }
 
 /* CSS for section section:stats-cta */
@@ -771,7 +792,6 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid rgba(50,145,246,.5); ou
         align-items: center;
     }
     .stats-cta-title {
-     
         font-size: 48px;
         font-weight: 700;
         line-height: 54px;
@@ -817,7 +837,8 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid rgba(50,145,246,.5); ou
             gap: 30px;
         }
         .stats-cta-title {
-            font-size: 36px;
+            font-size: 32px;
+            line-height: 30px;
         }
         .stat-value {
             font-size: 40px;
@@ -830,6 +851,7 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid rgba(50,145,246,.5); ou
     }
     .faq-container {
         display: flex;
+        justify-content: center;
         gap: 40px;
     }
     .faq-left {
