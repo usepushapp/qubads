@@ -104,25 +104,13 @@ a {
     text-align: center;
 }
 
-.stats-cta-content {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Optional: replaces padding-right */
-}
 
 .playstore, .appstore {
-    width: 200px;
-    height: auto;
-    margin-top: 40px;
-  
-}
-
-/*.playstore, .appstore {
    width:200px;
    padding-right:20px;
    height:auto;
    margin-top:40px;
-}*/
+}
 
 @media (max-width: 1200px) {
     .section-title {
